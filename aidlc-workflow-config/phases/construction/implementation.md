@@ -25,11 +25,49 @@
 
 ## Process
 
-- **MANDATORY**: Use the implementation plan template at `.amazonq/templates/planning/implementation-plan-template.md` for systematic implementation
-- **MANDATORY**: Map all MVP user stories from phase 1.1 to implementation tasks
-- Apply local-first development approach
-- Implement MVP scope first, then plan future features
-- Ensure testable and runnable components
+### Azure DevOps Integration Workflow
+
+1. **Ticket Selection**
+   - Ask user which Azure DevOps work item/ticket number to implement
+   - Validate ticket exists and contains sufficient implementation details
+   - Review ticket description, acceptance criteria, and linked requirements
+
+2. **Update Ticket Status to In-Progress**
+   - Update the selected work item status to "In-Progress" in Azure DevOps
+   - Ensure ticket is assigned to the appropriate developer
+   - Link ticket to current sprint/iteration if applicable
+
+3. **Implementation Phase**
+   - **MANDATORY**: Use the implementation plan template at `.amazonq/templates/planning/implementation-plan-template.md` for systematic implementation
+   - **MANDATORY**: Map all MVP user stories from phase 1.1 to implementation tasks
+   - Apply local-first development approach
+   - Implement MVP scope first, then plan future features
+   - Ensure testable and runnable components
+   - Follow coding standards and SOLID principles
+   - Write unit tests and integration tests as code is developed
+
+4. **Testing and Validation**
+   - Run all unit tests and ensure they pass
+   - Execute integration tests to verify end-to-end functionality
+   - Validate against ticket acceptance criteria
+   - Test user workflows per user story requirements
+   - Ensure application runs locally without errors
+
+5. **Create Pull Request**
+   - After coding and testing are complete, create a pull request in Azure DevOps
+   - Ensure PR title references the work item number (e.g., "AB#123: Implement user authentication")
+   - Include comprehensive PR description with:
+     - Summary of changes
+     - Reference to work item/ticket
+     - Testing performed
+     - Screenshots/demos if applicable
+   - Link PR to the work item in Azure DevOps
+
+6. **Update Ticket Status to Code Review**
+   - Once PR is created, update work item status to "Code Review"
+   - Add PR link to work item comments
+   - Notify reviewers and stakeholders
+   - Address review feedback and update PR as needed
 
 ## User Story Traceability Requirements
 

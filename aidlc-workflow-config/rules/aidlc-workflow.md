@@ -59,13 +59,15 @@ inclusion: always
 │   │   ├── 02-domain-decomposition.md
 │   │   ├── 03-domain-design[-{context}].md
 │   │   ├── 04-logical-design[-{context}].md
-│   │   └── 05-implementation[-{context}].md
+│   │   ├── 05-implementation[-{context}].md
+│   │   └── 06-automated-testing[-{context}].md
 │   └── plans/
 │       ├── 01-requirements-gathering.md
 │       ├── 02-domain-decomposition.md
 │       ├── 03-domain-design[-{context}].md
 │       ├── 04-logical-design[-{context}].md
-│       └── 05-implementation[-{context}].md
+│       ├── 05-implementation[-{context}].md
+│       └── 06-automated-testing[-{context}].md
 └── outputs/
     ├── inception/
     │   ├── user-stories.md
@@ -73,7 +75,8 @@ inclusion: always
     └── construction/[{context}/]
         ├── domain-design.md
         ├── logical-design.md
-        └── implementation-plan.md
+        ├── implementation-plan.md
+        └── automated-testing-report.md
 ```
 
 ### Naming Conventions
@@ -118,6 +121,7 @@ inclusion: always
 - **Domain Design**: aidlc-workflow-config/phases/construction/domain-design.md
 - **Logical Design**: aidlc-workflow-config/phases/construction/logical-design.md
 - **Implementation**: aidlc-workflow-config/phases/construction/implementation.md
+- **Automated Testing**: aidlc-workflow-config/phases/construction/automated-testing.md
 
 ## 📊 Workflow Phases
 
@@ -139,6 +143,7 @@ inclusion: always
 - **2.1 Domain Design** → Apply DDD tactical patterns
 - **2.2 Logical Design** → Create technical specifications
 - **2.3 Implementation** → Generate working code
+- **2.4 Automated Testing** → Execute automated testing
 
 ### Operation (Deployment)
 
@@ -212,6 +217,7 @@ inclusion: always
 - [Domain Design](../aidlc-workflow-config/phases/construction/domain-design.md) - Apply DDD tactical patterns
 - [Logical Design](../aidlc-workflow-config/phases/construction/logical-design.md) - Create technical specifications
 - [Implementation](../aidlc-workflow-config/phases/construction/implementation.md) - Generate working code
+- [Automated Testing](../aidlc-workflow-config/phases/construction/automated-testing.md) - Execute automated testing
 - [Deployment](../aidlc-workflow-config/phases/operation/deployment.md) - Deploy to target platform
 
 ## Usage

@@ -11,12 +11,14 @@ AI-DLC supports starting from any phase after domain decomposition, enabling con
 - `"start AI-DLC from domain design"` - Begin from phase 2.1
 - `"start AI-DLC from logical design"` - Begin from phase 2.2  
 - `"start AI-DLC from implementation"` - Begin from phase 2.3
+ - `"start AI-DLC from automated testing"` - Begin from phase 2.4
 - `"resume AI-DLC at phase {X.Y}"` - Resume at specific phase
 
 ### Context-Specific Entry (Microservices)
 - `"start domain design for {context-name}"`
 - `"start logical design for {context-name}"`
 - `"start implementation for {context-name}"`
+ - `"start automated testing for {context-name}"`
 
 ## Prerequisite Validation
 
@@ -59,6 +61,19 @@ AI-DLC supports starting from any phase after domain decomposition, enabling con
 2. Check logical design exists for target context
 3. Confirm technical specifications are complete
 4. If missing: Guide user to complete logical design first
+
+### Phase 2.4 Automated Testing Entry
+**Required Artifacts:**
+- [ ] All Implementation prerequisites
+- [ ] Implementation completed for target context
+- [ ] Application runs locally without errors
+- [ ] All MVP user stories implemented and testable
+
+**Validation Process:**
+1. Validate Implementation prerequisites
+2. Check implementation outputs exist for target context
+3. Confirm application can be started locally
+4. If missing: Guide user to complete implementation or fix runtime issues first
 
 ## Context Selection (Microservices)
 
